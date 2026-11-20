@@ -1,0 +1,217 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Asha Verma",
+      "email": "admin@desk.test",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Ravi Kumar",
+      "email": "ravi@desk.test",
+      "password": "staff123",
+      "role": "staff"
+    },
+    {
+      "id": 3,
+      "name": "Meera Nair",
+      "email": "meera@desk.test",
+      "password": "staff123",
+      "role": "staff"
+    },
+    {
+      "id": 4,
+      "name": "Karan Mehta",
+      "email": "karan@desk.test",
+      "password": "user123",
+      "role": "user"
+    },
+    {
+      "id": 5,
+      "name": "Sana Iqbal",
+      "email": "sana@desk.test",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "complaints": [
+    {
+      "id": 1,
+      "title": "Water leaking in the Block C corridor",
+      "category": "Infrastructure",
+      "priority": "High",
+      "location": "Block C, 2nd floor",
+      "status": "In progress",
+      "description": "Water has been dripping from the ceiling near the stairwell for three days and the floor is slippery.",
+      "userId": 4,
+      "userName": "Karan Mehta",
+      "assignedTo": 2,
+      "assigneeName": "Ravi Kumar",
+      "createdAt": "2026-11-03T09:15:00.000Z",
+      "updatedAt": "2026-11-06T11:40:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Wi-Fi drops every evening in the library",
+      "category": "IT & network",
+      "priority": "Medium",
+      "location": "Library reading hall",
+      "status": "Assigned",
+      "description": "The connection disconnects between 6 and 9 pm and needs a manual reconnect each time.",
+      "userId": 5,
+      "userName": "Sana Iqbal",
+      "assignedTo": 3,
+      "assigneeName": "Meera Nair",
+      "createdAt": "2026-11-05T14:20:00.000Z",
+      "updatedAt": "2026-11-07T08:05:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Streetlight out near the north gate",
+      "category": "Safety",
+      "priority": "High",
+      "location": "North gate",
+      "status": "Submitted",
+      "description": "The light has been off for a week and the path is very dark after 7 pm.",
+      "userId": 4,
+      "userName": "Karan Mehta",
+      "assignedTo": null,
+      "assigneeName": null,
+      "createdAt": "2026-11-12T18:45:00.000Z",
+      "updatedAt": "2026-11-12T18:45:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "Duplicate charge on the October invoice",
+      "category": "Billing",
+      "priority": "Medium",
+      "location": "Accounts office",
+      "status": "Resolved",
+      "description": "My October invoice shows the same amount charged twice. Please refund the extra payment.",
+      "userId": 5,
+      "userName": "Sana Iqbal",
+      "assignedTo": 2,
+      "assigneeName": "Ravi Kumar",
+      "createdAt": "2026-10-28T10:00:00.000Z",
+      "updatedAt": "2026-11-02T16:30:00.000Z"
+    },
+    {
+      "id": 6,
+      "title": "Help desk staff were unresponsive",
+      "category": "Service",
+      "priority": "Medium",
+      "location": "Student help desk",
+      "status": "Submitted",
+      "description": "I waited 40 minutes at the help desk and nobody attended to my request or gave an update.",
+      "userId": 5,
+      "userName": "Sana Iqbal",
+      "assignedTo": null,
+      "assigneeName": null,
+      "createdAt": "2026-11-14T12:10:00.000Z",
+      "updatedAt": "2026-11-14T12:10:00.000Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "complaintId": 1,
+      "userId": 4,
+      "userName": "Karan Mehta",
+      "type": "event",
+      "text": "Complaint submitted",
+      "createdAt": "2026-11-03T09:15:00.000Z"
+    },
+    {
+      "id": 2,
+      "complaintId": 1,
+      "userId": 1,
+      "userName": "Asha Verma",
+      "type": "event",
+      "text": "Assigned to Ravi Kumar",
+      "createdAt": "2026-11-04T10:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "complaintId": 1,
+      "userId": 2,
+      "userName": "Ravi Kumar",
+      "type": "event",
+      "text": "Status changed to In progress",
+      "createdAt": "2026-11-06T11:40:00.000Z"
+    },
+    {
+      "id": 4,
+      "complaintId": 1,
+      "userId": 2,
+      "userName": "Ravi Kumar",
+      "type": "comment",
+      "text": "Plumber has located the leaking joint. Repair is scheduled for tomorrow morning.",
+      "createdAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": 5,
+      "complaintId": 2,
+      "userId": 5,
+      "userName": "Sana Iqbal",
+      "type": "event",
+      "text": "Complaint submitted",
+      "createdAt": "2026-11-05T14:20:00.000Z"
+    },
+    {
+      "id": 6,
+      "complaintId": 2,
+      "userId": 1,
+      "userName": "Asha Verma",
+      "type": "event",
+      "text": "Assigned to Meera Nair",
+      "createdAt": "2026-11-07T08:05:00.000Z"
+    },
+    {
+      "id": 7,
+      "complaintId": 3,
+      "userId": 4,
+      "userName": "Karan Mehta",
+      "type": "event",
+      "text": "Complaint submitted",
+      "createdAt": "2026-11-12T18:45:00.000Z"
+    },
+    {
+      "id": 8,
+      "complaintId": 4,
+      "userId": 5,
+      "userName": "Sana Iqbal",
+      "type": "event",
+      "text": "Complaint submitted",
+      "createdAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "complaintId": 4,
+      "userId": 2,
+      "userName": "Ravi Kumar",
+      "type": "event",
+      "text": "Status changed to Resolved",
+      "createdAt": "2026-11-02T16:30:00.000Z"
+    },
+    {
+      "id": 10,
+      "complaintId": 4,
+      "userId": 2,
+      "userName": "Ravi Kumar",
+      "type": "comment",
+      "text": "The duplicate payment has been refunded. It should reach your account in 3 to 5 working days.",
+      "createdAt": "2026-11-02T16:32:00.000Z"
+    },
+    {
+      "id": 12,
+      "complaintId": 6,
+      "userId": 5,
+      "userName": "Sana Iqbal",
+      "type": "event",
+      "text": "Complaint submitted",
+      "createdAt": "2026-11-14T12:10:00.000Z"
+    }
+  ]
+}
